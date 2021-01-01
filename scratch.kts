@@ -141,7 +141,7 @@ println(x1)
 val (wer,_) = coord//pega somente o primeiro parametro e descarta o segundo
 println(wer)
 */
-
+val coord3D = Triple(1,2,3)//Triplas
 
 
 
