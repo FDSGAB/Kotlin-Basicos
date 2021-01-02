@@ -137,20 +137,31 @@ class Color {
 /*
 Extensões
  */
-
+/*
 val Window.size: Double
     get() height * width
 
 val otherWindow = Window(2)
 println(otherWindow.size)
-
-fun String.firstChar() {
+*/
+/*
+fun String.firstChar() : String {
     return this.first()
 }
+*/
+fun String.startsUppercase() : Boolean {
+    return this.first().isUpperCase()
+}
 
+class Maths{
+    companion object {
+        fun factorial(number: Int) : Int {
+            return (1..number).fold(1) {a, b ->a*b}
+        }
+    }
+}
 
-
-
+Maths.factorial(5)
 
 
 
